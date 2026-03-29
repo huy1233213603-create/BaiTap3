@@ -1,0 +1,169 @@
+/* 1. Cài đặt chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 2. Header */
+header {
+    background-color: #FFB6C1; /* Màu hồng lightpink y hệt Figma */
+    padding: 15px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.search-box input {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* 3. Hero Banner (Frame 1) */
+.hero-banner {
+    background-color: #F5F5F5;
+    margin: 30px 0;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+}
+
+.hero-content {
+    max-width: 60%;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.hero-content p {
+    font-size: 13px;
+    color: #666;
+}
+
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    max-width: 100%; /* Đảm bảo ảnh GiayDemo.png vừa khung */
+    height: auto;
+}
+
+/* 4. Product Section (Frame 2 & 3) */
+.product-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột y hệt Figma */
+    gap: 30px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.img-container {
+    width: 100%;
+    aspect-ratio: 1/1; /* Giữ khung ảnh vuông */
+    background-color: #f9f9f9; /* Nền xám nhẹ cho ảnh */
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Cắt phần thừa nếu ảnh quá to */
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Giúp ảnh giày lấp đầy khung vuông mà không bị méo */
+}
+
+.p-name {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.p-price {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* 5. Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.footer-header {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.text-right {
+    text-align: right;
+}
